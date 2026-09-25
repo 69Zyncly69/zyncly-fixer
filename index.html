@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zyncly | A fixer for busy business owners</title>
+<meta name="description" content="Luke de Marco, the fixer and right hand for owners of businesses with 2 to 20 staff. £300 a day, paid monthly. Mid Devon and the West Country.">
+<link rel="canonical" href="https://www.zyncly.co.uk/">
+<meta property="og:title" content="Zyncly | A fixer for busy business owners">
+<meta property="og:description" content="Luke de Marco, the fixer and right hand for owners of businesses with 2 to 20 staff. £300 a day, paid monthly. Mid Devon and the West Country.">
+<meta property="og:url" content="https://www.zyncly.co.uk/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2314233B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23D99A21'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --navy:#14233B; --paper:#F3F4F1; --ink:#161B24; --amber:#D99A21; --steel:#6B7688;
+  --bg:var(--paper); --text:var(--ink); --muted:#56606F; --rule:#D5D9DE; --panel:#FFFFFF;
+  --hero-bg:var(--navy); --hero-text:#EEF1F5; --hero-muted:#A8B3C4; --tick:var(--amber);
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1726; --text:#E6EAF0; --muted:#9AA5B6; --rule:#243349; --panel:#142036;
+    --hero-bg:#0A1220; --hero-text:#EEF1F5; --hero-muted:#93A0B4; --tick:#E7AC3A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1726; --text:#E6EAF0; --muted:#9AA5B6; --rule:#243349; --panel:#142036;
+  --hero-bg:#0A1220; --hero-text:#EEF1F5; --hero-muted:#93A0B4; --tick:#E7AC3A;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:1.0625rem;line-height:1.6;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:.005em;text-wrap:balance;margin:0}
+.label{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* hero */
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(28px,5vw,56px) clamp(40px,7vw,80px)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:clamp(32px,6vw,64px)}
+.brand{font-family:var(--display);font-weight:700;font-size:1.6rem;letter-spacing:.04em}
+.brand span{color:var(--amber)}
+.top .label{color:var(--hero-muted)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:start}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p.lede{color:var(--hero-muted);font-size:1.15rem;max-width:34em;margin:20px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.phone{font-family:var(--display);font-weight:600;font-size:1.9rem;letter-spacing:.03em;user-select:all}
+.copy{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;background:transparent;color:var(--hero-text);border:1px solid #3B4B66;padding:8px 12px;border-radius:2px;cursor:pointer}
+.copy:hover{border-color:var(--amber)}
+.ask{font-family:var(--mono);font-size:.8rem;color:var(--hero-muted);flex-basis:100%}
+
+/* fix list */
+.fixlist{background:#0F1B2E;border:1px solid #2A3A55;padding:20px 22px 16px;font-family:var(--mono);font-size:.86rem}
+.fixlist header{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #2A3A55;padding-bottom:10px;margin-bottom:6px;color:var(--hero-muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.fixlist ul{list-style:none;margin:0;padding:0}
+.fixlist li{display:grid;grid-template-columns:3.2em 1.4em 1fr;gap:6px;padding:9px 0;border-bottom:1px dashed #22314A;color:#C9D2DE}
+.fixlist li:last-child{border-bottom:0}
+.fixlist .t{color:var(--hero-muted);font-variant-numeric:tabular-nums}
+.fixlist .k{color:var(--tick);font-weight:500}
+.fixlist li.done .d{text-decoration:line-through;text-decoration-color:#5A6A84;color:#8E9AAD}
+.fixlist li.open .k{color:var(--hero-muted)}
+.fixlist footer{margin-top:10px;color:var(--hero-muted);font-size:.72rem}
+@media (prefers-reduced-motion:no-preference){
+  .fixlist li.done .d{animation:strike .5s ease-out both}
+  .fixlist li:nth-child(2) .d{animation-delay:.15s}
+  .fixlist li:nth-child(3) .d{animation-delay:.3s}
+  .fixlist li:nth-child(4) .d{animation-delay:.45s}
+  @keyframes strike{from{text-decoration-color:transparent}to{text-decoration-color:#5A6A84}}
+}
+
+/* sections */
+section{padding-block:clamp(44px,7vw,80px);border-bottom:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-bottom:28px;align-items:baseline}
+.sec-head h2{font-size:clamp(2rem,4vw,2.8rem);text-transform:uppercase}
+.prose{max-width:38em}
+.prose p{margin:0 0 1em}
+.line{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,3vw,2rem);line-height:1.15;border-left:4px solid var(--amber);padding-left:16px;max-width:26em;margin:8px 0 0}
+
+.plate{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--text)}
+.plate div{padding:20px 22px 8px 0}
+.plate div+div{padding-left:22px;border-left:1px solid var(--rule)}
+.plate h3{font-size:1.5rem;text-transform:uppercase;margin-bottom:8px}
+.plate p{margin:0;color:var(--muted)}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:2px solid var(--text)}
+.steps li{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.steps .n{font-family:var(--display);font-weight:700;font-size:1.3rem;text-transform:uppercase}
+.steps .n small{display:block;font-family:var(--mono);font-weight:400;font-size:.72rem;letter-spacing:.08em;color:var(--muted)}
+.steps p{margin:0}
+
+.rates{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rate{background:var(--panel);border:1px solid var(--rule);padding:22px}
+.rate.pick{border-color:var(--amber);box-shadow:inset 0 3px 0 var(--amber)}
+.rate .p{font-family:var(--display);font-weight:700;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.rate .p small{font-size:1rem;font-weight:500;color:var(--muted)}
+.rate h3{font-size:1.2rem;text-transform:uppercase;margin:10px 0 6px}
+.rate p{margin:0;color:var(--muted);font-size:.98rem}
+.small{font-size:.92rem;color:var(--muted);margin-top:14px}
+
+.log{border-top:2px solid var(--text)}
+.log article{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.log h3{font-size:1.35rem;text-transform:uppercase}
+.log .label{display:block;margin-top:4px}
+.log p{margin:0;max-width:40em}
+
+.contact{background:var(--hero-bg);color:var(--hero-text);border-bottom:0}
+.contact h2{font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;margin-bottom:14px}
+.contact p{color:var(--hero-muted);max-width:34em}
+.contact .rows{display:grid;gap:10px;margin-top:24px}
+.contact .row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.contact .v{font-family:var(--display);font-weight:600;font-size:1.7rem;letter-spacing:.02em;user-select:all;word-break:break-all}
+.quals{list-style:none;margin:18px 0 0;padding:14px 0 0;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:8px 10px}
+.quals li{font-family:var(--mono);font-size:.75rem;letter-spacing:.04em;border:1px solid var(--rule);padding:5px 9px;background:var(--panel)}
+.foot{line-height:1.7;background:var(--hero-bg);color:var(--hero-muted);font-family:var(--mono);font-size:.72rem;padding-block:0 28px}
+
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  .sec-head,.steps li,.log article{grid-template-columns:1fr;gap:6px}
+  .plate,.rates{grid-template-columns:1fr}
+  .plate div,.plate div+div{padding:18px 0;border-left:0;border-bottom:1px solid var(--rule)}
+}
+</style>
+<style>html{-webkit-text-size-adjust:100%}a.phone,a.num,a.v{color:inherit;text-decoration:none}a.phone:hover,a.num:hover,a.v:hover{text-decoration:underline}</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">ZYNC<span>LY</span></div>
+      <div class="label">Founder's right hand · West Country &amp; remote</div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>A <em>fixer</em> for business owners doing too much</h1>
+        <p class="lede">You built it, it pays you well, and now it's eating every hour you've got. I take the jobs that keep landing back on your desk and I get them done, so you can get back to running the business.</p>
+        <div class="cta">
+          <a class="phone" id="ph1" href="tel:+447506010133">07506 010133</a>
+          <button class="copy" type="button" data-copy="07506 010133">Copy number</button>
+          <span class="ask">Give me twenty minutes. Ring, or email <a href="mailto:luke@zyncly.co.uk">luke@zyncly.co.uk</a> with a day.</span>
+        </div>
+      </div>
+      <aside class="fixlist" aria-label="An example week's fix list">
+        <header><span>Fix list</span><span>Example week</span></header>
+        <ul>
+          <li class="done"><span class="t">Mon</span><span class="k">✓</span><span class="d">Lease renewal chased and signed</span></li>
+          <li class="done"><span class="t">Tue</span><span class="k">✓</span><span class="d">Last quarter's Xero mess sorted</span></li>
+          <li class="done"><span class="t">Wed</span><span class="k">✓</span><span class="d">New haulier in after the old one let us down</span></li>
+          <li class="done"><span class="t">Thu</span><span class="k">✓</span><span class="d">New starter's van, kit and training booked</span></li>
+          <li class="open"><span class="t">Fri</span><span class="k">○</span><span class="d">One-page month end on your desk</span></li>
+        </ul>
+        <footer>What a week can look like. Your list will be different.</footer>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Who it's for</span><h2>You're the one everything comes back to</h2></div>
+      <div class="prose">
+        <p>I work for owners of businesses with somewhere between two and twenty staff. It's making good money and you're taking a good living out of it, but you're still the person every problem ends up with, and the stuff that would actually grow the business never gets a look in.</p>
+        <p class="line">You don't need to employ someone. You just need Zyncly and a little bit of face-to-face.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="label">What I take off you</span><h2>Hand it over and forget about it</h2></div>
+      <div class="plate">
+        <div><h3>When it's gone wrong</h3><p>A supplier's let you down, a customer's kicking off, a job's gone sideways. I pick it up and sort it, start to finish.</p></div>
+        <div><h3>The back office</h3><p>Finance, Xero, the processes and systems nobody's had time to set up properly. Tidied, running, and a one-page picture of where you are.</p></div>
+        <div><h3>The projects that stall</h3><p>New premises, a new system, taking on your next person, the thing that's been on the list for six months. I run it through to the finish.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="label">How it works</span><h2>Three steps, no long contract</h2></div>
+      <ol class="steps">
+        <li><span class="n">A chat<small>Twenty minutes</small></span><p>You tell me what's on your plate. I tell you straight whether I can help.</p></li>
+        <li><span class="n">One fix, free<small>A working audition</small></span><p>I take one messy thing off you and sort it, so you can see how I work before you spend a penny.</p></li>
+        <li><span class="n">The retainer<small>Monthly</small></span><p>A day a fortnight or a day a week, on site or remote, and I'm on the end of the phone in between.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="label">What it costs</span><h2>£300 a day, paid monthly</h2></div>
+      <div class="rates">
+        <div class="rate"><div class="p">£0</div><h3>First fix</h3><p>One messy thing sorted, free, so you know what you're getting.</p></div>
+        <div class="rate pick"><div class="p">£600<small> /month</small></div><h3>A day a fortnight</h3><p>Two days a month plus the phone. Right for most owners to start.</p></div>
+        <div class="rate"><div class="p">£1,200<small> /month</small></div><h3>A day a week</h3><p>Four days a month plus the phone, for when there's a lot on.</p></div>
+      </div>
+      <p class="small">A month's notice either way. Travel within the West Country included.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Things I've fixed</span><h2>The day the plan falls apart</h2></div>
+      <div class="log">
+        <article><div><h3>Fix Radio</h3><span class="label">National radio start-up</span></div><p>Needed studios at short notice. I found them, did the lease and had them fitted out, two studios, back office and sales floor, on time and under budget. Raised £400,000 for the station along the way.</p></article>
+        <article><div><h3>TJB Super Yachts</h3><span class="label">Superyacht brokerage</span></div><p>Sales were flying and delivery was falling apart. I rebuilt the processes, put Salesforce in, took invoicing and cashflow in hand, and handed it back running.</p></article>
+        <article><div><h3>Hangar 8</h3><span class="label">Private aviation, 80 aircraft</span></div><p>Director of Operations. Set up the 24/7 operations rooms, swapped a G7 summit aircraft through security in two hours, and kept clients flying through the 2010 ash cloud.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Who I am</span><h2>Luke de Marco</h2></div>
+      <div class="prose">
+        <p>I've spent twenty years as an entrepreneur. I ran operations in private aviation for heads of state and big-company CEOs, built my own flight support company, ran a car leasing business and a cattle farm. The bit I'm good at is when it all goes wrong: demanding customers, tight deadlines, nobody else grasping the nettle. That's where I'm happiest.</p>
+        <p>A while back I made a lifestyle change. I want to be around for my family, so I don't chase building big companies of my own any more. I put all that experience into a handful of owners' businesses instead, and get home for tea.</p>
+        <p>I'm based in Mid Devon and work across the West Country, and remotely anywhere.</p>
+        <ul class="quals" aria-label="Qualifications">
+          <li>APM Project Management Qualification (PMQ)</li>
+          <li>AgilePM Practitioner</li>
+          <li>IOSH Managing Safely</li>
+          <li>Xero certified</li>
+          <li>Former CAA Form 4 nominated postholder</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <h2>What's on your plate?</h2>
+      <p>Give me a ring, or email me with what's landing on your desk and a day that suits. If it's not for you, no problem at all.</p>
+      <div class="rows">
+        <div class="row"><a class="v" href="tel:+447506010133">07506 010133</a><button class="copy" type="button" data-copy="07506 010133">Copy</button></div>
+        <div class="row"><a class="v" href="mailto:luke@zyncly.co.uk">luke@zyncly.co.uk</a><button class="copy" type="button" data-copy="luke@zyncly.co.uk">Copy</button></div>
+      </div>
+    </div>
+  </section>
+</main>
+<div class="foot"><div class="wrap">Zyncly Ltd · Registered in England and Wales, company number 17439851 · Registered office: Garden Cottage, Woodmancote, Cirencester GL7 7ED · luke@zyncly.co.uk</div></div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-copy'), old=b.textContent;
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent=old},1400)}
+    try{
+      navigator.clipboard.writeText(t).then(done,function(){sel(b)});
+    }catch(e){sel(b)}
+  });
+});
+function sel(b){
+  var v=b.previousElementSibling; if(!v) return;
+  var r=document.createRange(); r.selectNodeContents(v);
+  var s=window.getSelection(); s.removeAllRanges(); s.addRange(r);
+}
+</script>
+
+</body>
+</html>
