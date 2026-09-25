@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zyncly | Proof: what I actually do</title>
+<meta name="description" content="Real fixes, a business that runs without the owner in it, and your first fix free. Luke de Marco, Zyncly.">
+<link rel="canonical" href="https://www.zyncly.co.uk/proof">
+<meta property="og:title" content="Zyncly | Proof: what I actually do">
+<meta property="og:description" content="Real fixes, a business that runs without the owner in it, and your first fix free. Luke de Marco, Zyncly.">
+<meta property="og:url" content="https://www.zyncly.co.uk/proof">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%2314233B'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23D99A21'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --navy:#14233B; --paper:#F3F4F1; --ink:#161B24; --amber:#D99A21; --steel:#6B7688;
+  --bg:var(--paper); --text:var(--ink); --muted:#56606F; --rule:#D5D9DE; --panel:#FFFFFF;
+  --hero-bg:var(--navy); --hero-text:#EEF1F5; --hero-muted:#A8B3C4; --tick:var(--amber);
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1726; --text:#E6EAF0; --muted:#9AA5B6; --rule:#243349; --panel:#142036;
+    --hero-bg:#0A1220; --hero-text:#EEF1F5; --hero-muted:#93A0B4; --tick:#E7AC3A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1726; --text:#E6EAF0; --muted:#9AA5B6; --rule:#243349; --panel:#142036;
+  --hero-bg:#0A1220; --hero-text:#EEF1F5; --hero-muted:#93A0B4; --tick:#E7AC3A;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:1.0625rem;line-height:1.6;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;letter-spacing:.005em;text-wrap:balance;margin:0}
+.label{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+
+/* hero */
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:clamp(28px,5vw,56px) clamp(40px,7vw,80px)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:clamp(32px,6vw,64px)}
+.brand{font-family:var(--display);font-weight:700;font-size:1.6rem;letter-spacing:.04em}
+.brand span{color:var(--amber)}
+.top .label{color:var(--hero-muted)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:start}
+.hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--amber)}
+.hero p.lede{color:var(--hero-muted);font-size:1.15rem;max-width:34em;margin:20px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}
+.phone{font-family:var(--display);font-weight:600;font-size:1.9rem;letter-spacing:.03em;user-select:all}
+.copy{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;background:transparent;color:var(--hero-text);border:1px solid #3B4B66;padding:8px 12px;border-radius:2px;cursor:pointer}
+.copy:hover{border-color:var(--amber)}
+.ask{font-family:var(--mono);font-size:.8rem;color:var(--hero-muted);flex-basis:100%}
+
+/* fix list */
+.fixlist{background:#0F1B2E;border:1px solid #2A3A55;padding:20px 22px 16px;font-family:var(--mono);font-size:.86rem}
+.fixlist header{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #2A3A55;padding-bottom:10px;margin-bottom:6px;color:var(--hero-muted);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.fixlist ul{list-style:none;margin:0;padding:0}
+.fixlist li{display:grid;grid-template-columns:3.2em 1.4em 1fr;gap:6px;padding:9px 0;border-bottom:1px dashed #22314A;color:#C9D2DE}
+.fixlist li:last-child{border-bottom:0}
+.fixlist .t{color:var(--hero-muted);font-variant-numeric:tabular-nums}
+.fixlist .k{color:var(--tick);font-weight:500}
+.fixlist li.done .d{text-decoration:line-through;text-decoration-color:#5A6A84;color:#8E9AAD}
+.fixlist li.open .k{color:var(--hero-muted)}
+.fixlist footer{margin-top:10px;color:var(--hero-muted);font-size:.72rem}
+@media (prefers-reduced-motion:no-preference){
+  .fixlist li.done .d{animation:strike .5s ease-out both}
+  .fixlist li:nth-child(2) .d{animation-delay:.15s}
+  .fixlist li:nth-child(3) .d{animation-delay:.3s}
+  .fixlist li:nth-child(4) .d{animation-delay:.45s}
+  @keyframes strike{from{text-decoration-color:transparent}to{text-decoration-color:#5A6A84}}
+}
+
+/* sections */
+section{padding-block:clamp(44px,7vw,80px);border-bottom:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:220px 1fr;gap:24px;margin-bottom:28px;align-items:baseline}
+.sec-head h2{font-size:clamp(2rem,4vw,2.8rem);text-transform:uppercase}
+.prose{max-width:38em}
+.prose p{margin:0 0 1em}
+.line{font-family:var(--display);font-weight:600;font-size:clamp(1.5rem,3vw,2rem);line-height:1.15;border-left:4px solid var(--amber);padding-left:16px;max-width:26em;margin:8px 0 0}
+
+.plate{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:2px solid var(--text)}
+.plate div{padding:20px 22px 8px 0}
+.plate div+div{padding-left:22px;border-left:1px solid var(--rule)}
+.plate h3{font-size:1.5rem;text-transform:uppercase;margin-bottom:8px}
+.plate p{margin:0;color:var(--muted)}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:2px solid var(--text)}
+.steps li{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--rule)}
+.steps .n{font-family:var(--display);font-weight:700;font-size:1.3rem;text-transform:uppercase}
+.steps .n small{display:block;font-family:var(--mono);font-weight:400;font-size:.72rem;letter-spacing:.08em;color:var(--muted)}
+.steps p{margin:0}
+
+.rates{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rate{background:var(--panel);border:1px solid var(--rule);padding:22px}
+.rate.pick{border-color:var(--amber);box-shadow:inset 0 3px 0 var(--amber)}
+.rate .p{font-family:var(--display);font-weight:700;font-size:2.6rem;line-height:1;font-variant-numeric:tabular-nums}
+.rate .p small{font-size:1rem;font-weight:500;color:var(--muted)}
+.rate h3{font-size:1.2rem;text-transform:uppercase;margin:10px 0 6px}
+.rate p{margin:0;color:var(--muted);font-size:.98rem}
+.small{font-size:.92rem;color:var(--muted);margin-top:14px}
+
+.log{border-top:2px solid var(--text)}
+.log article{display:grid;grid-template-columns:220px 1fr;gap:24px;padding:20px 0;border-bottom:1px solid var(--rule)}
+.log h3{font-size:1.35rem;text-transform:uppercase}
+.log .label{display:block;margin-top:4px}
+.log p{margin:0;max-width:40em}
+
+.contact{background:var(--hero-bg);color:var(--hero-text);border-bottom:0}
+.contact h2{font-size:clamp(2.2rem,5vw,3.4rem);text-transform:uppercase;margin-bottom:14px}
+.contact p{color:var(--hero-muted);max-width:34em}
+.contact .rows{display:grid;gap:10px;margin-top:24px}
+.contact .row{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.contact .v{font-family:var(--display);font-weight:600;font-size:1.7rem;letter-spacing:.02em;user-select:all;word-break:break-all}
+.quals{list-style:none;margin:18px 0 0;padding:14px 0 0;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:8px 10px}
+.quals li{font-family:var(--mono);font-size:.75rem;letter-spacing:.04em;border:1px solid var(--rule);padding:5px 9px;background:var(--panel)}
+.foot{line-height:1.7;background:var(--hero-bg);color:var(--hero-muted);font-family:var(--mono);font-size:.72rem;padding-block:0 28px}
+
+@media (max-width:820px){
+  .hero-grid{grid-template-columns:1fr}
+  .sec-head,.steps li,.log article{grid-template-columns:1fr;gap:6px}
+  .plate,.rates{grid-template-columns:1fr}
+  .plate div,.plate div+div{padding:18px 0;border-left:0;border-bottom:1px solid var(--rule)}
+}
+
+/* proof page */
+.hero .lede b{color:var(--hero-text);font-weight:600}
+.check{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;border-top:2px solid var(--text);padding-top:18px}
+.check label{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--rule);padding:14px 16px;cursor:pointer;line-height:1.4}
+.check input{appearance:none;-webkit-appearance:none;flex:0 0 22px;width:22px;height:22px;border:2px solid var(--steel);margin:1px 0 0;display:grid;place-content:center;cursor:pointer;background:transparent}
+.check input::after{content:"";width:11px;height:6px;border-left:3px solid var(--amber);border-bottom:3px solid var(--amber);transform:rotate(-45deg) translate(1px,-1px);opacity:0}
+.check input:checked{border-color:var(--amber)}
+.check input:checked::after{opacity:1}
+.check label:has(input:checked){border-color:var(--amber)}
+.verdict{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding:16px 18px;border:1px dashed var(--rule);font-family:var(--display);font-size:1.35rem;font-weight:600}
+.verdict .count{font-family:var(--mono);font-size:.8rem;font-weight:400;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.verdict.hot{border:2px solid var(--amber);background:var(--panel)}
+.verdict .vnum{display:none}
+.verdict.hot .vnum{display:inline}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel);border:1px solid var(--rule);padding:20px 20px 18px;display:flex;flex-direction:column;gap:10px}
+.card h3{font-size:1.4rem;text-transform:uppercase}
+.card dl{margin:0;display:grid;gap:8px}
+.card dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.card dd{margin:0;line-height:1.45}
+.card dd.res{font-weight:600}
+.flow{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:2px solid var(--text)}
+.flow li{position:relative;padding:16px 18px 16px 0;border-bottom:1px solid var(--rule)}
+.flow li .s{display:block;font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
+.flow li b{font-family:var(--display);font-size:1.25rem;text-transform:uppercase;font-weight:700;display:block;line-height:1.1;margin:2px 0 4px}
+.flow li span.d{font-size:.95rem;color:var(--muted);display:block;line-height:1.4}
+.flow li:not(:nth-child(4n))::after{content:"→";position:absolute;right:6px;top:16px;color:var(--amber);font-family:var(--display);font-size:1.3rem}
+.cap{margin-top:14px;max-width:40em}
+.pager{background:var(--panel);border:1px solid var(--rule);max-width:620px;box-shadow:0 1px 0 var(--rule)}
+.pager header{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:14px 18px;border-bottom:2px solid var(--text)}
+.pager header b{font-family:var(--display);font-size:1.3rem;text-transform:uppercase}
+.pager table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.pager td{padding:10px 18px;border-bottom:1px solid var(--rule)}
+.pager td.n{text-align:right;font-family:var(--mono);white-space:nowrap}
+.pager tr.flag td:first-child{border-left:4px solid var(--amber)}
+.pager .acts{padding:14px 18px 16px}
+.pager .acts ol{margin:6px 0 0;padding-left:1.2em}
+.pager .ex{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--amber)}
+.twin{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:start}
+.back{display:inline-block;margin-top:18px;font-family:var(--mono);font-size:.8rem;letter-spacing:.04em}
+@media (max-width:820px){
+  .check,.cards,.twin{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr 1fr}
+  .flow li:not(:nth-child(4n))::after{content:none}
+}
+@media (max-width:460px){.flow{grid-template-columns:1fr}}
+</style>
+<style>html{-webkit-text-size-adjust:100%}a.phone,a.num,a.v{color:inherit;text-decoration:none}a.phone:hover,a.num:hover,a.v:hover{text-decoration:underline}</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">ZYNC<span>LY</span></div>
+      <div class="label">Proof · Luke de Marco</div>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>You've had my letter. Here's what I <em>actually</em> do.</h1>
+        <p class="lede">I'm a fixer. I take the jobs that keep landing back on the owner's desk and I get them done. Below is what that looks like in real life, and a quick check to see if it's you.</p>
+        <div class="cta">
+          <a class="phone" id="ph1" href="tel:+447506010133">07506 010133</a>
+          <button class="copy" type="button" data-copy="07506 010133">Copy number</button>
+          <span class="ask">Text or ring. Or email <a href="mailto:luke@zyncly.co.uk">luke@zyncly.co.uk</a>.</span>
+        </div>
+      </div>
+      <aside class="fixlist" aria-label="What's on this page">
+        <header><span>On this page</span><span>2 minutes</span></header>
+        <ul>
+          <li class="open"><span class="t">01</span><span class="k">○</span><span class="d">Is this you? Six quick ticks</span></li>
+          <li class="open"><span class="t">02</span><span class="k">○</span><span class="d">Five things I've fixed</span></li>
+          <li class="open"><span class="t">03</span><span class="k">○</span><span class="d">A business that runs without the owner in it</span></li>
+          <li class="open"><span class="t">04</span><span class="k">○</span><span class="d">The Friday one-pager</span></li>
+          <li class="open"><span class="t">05</span><span class="k">○</span><span class="d">Your first fix, free</span></li>
+        </ul>
+        <footer>Real jobs, real numbers. Example figures are marked.</footer>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="check">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Is this you?</span><h2>Tick what's true</h2></div>
+      <div class="check">
+        <label for="c1"><input type="checkbox" id="c1">You're the only one who really knows where the money is.</label>
+        <label for="c2"><input type="checkbox" id="c2">The same job has been on your list for months.</label>
+        <label for="c3"><input type="checkbox" id="c3">You're doing the admin at ten o'clock at night.</label>
+        <label for="c4"><input type="checkbox" id="c4">A supplier or customer problem lands on you every week.</label>
+        <label for="c5"><input type="checkbox" id="c5">You've thought about hiring someone for the office but can't face it.</label>
+        <label for="c6"><input type="checkbox" id="c6">You can't take a week off without the phone going.</label>
+      </div>
+      <div class="verdict" id="verdict" aria-live="polite">
+        <span class="count" id="count">0 of 6</span>
+        <span id="vtext">Tick three and we should talk.</span>
+        <a class="vnum" href="sms:+447506010133">07506 010133</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="fixes">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Things I've fixed</span><h2>Before and after</h2></div>
+      <div class="cards">
+        <article class="card"><h3>Fix Radio</h3><dl>
+          <dt>The problem</dt><dd>A national radio start-up needed studios, fast, and money to keep going.</dd>
+          <dt>What I did</dt><dd>Found the building, did the lease, had it fitted out as two studios, a back office and a sales floor.</dd>
+          <dt>Result</dt><dd class="res">On time, under budget, and £400,000 raised for the station.</dd></dl></article>
+        <article class="card"><h3>TJB Super Yachts</h3><dl>
+          <dt>The problem</dt><dd>Sales were flying and everything behind them was falling apart.</dd>
+          <dt>What I did</dt><dd>Rebuilt the processes, put Salesforce in, took invoicing, credit control and cashflow in hand.</dd>
+          <dt>Result</dt><dd class="res">Handed back running, with the owner out of the weeds.</dd></dl></article>
+        <article class="card"><h3>The G7 swap</h3><dl>
+          <dt>The problem</dt><dd>A G7 summit support aircraft had to be replaced at short notice, with a four-hour window.</dd>
+          <dt>What I did</dt><dd>Found a replacement and got it through summit security.</dd>
+          <dt>Result</dt><dd class="res">Done in 120 minutes.</dd></dl></article>
+        <article class="card"><h3>Egypt</h3><dl>
+          <dt>The problem</dt><dd>200 holidaymakers stuck in Egypt during civil unrest.</dd>
+          <dt>What I did</dt><dd>Staged two aircraft in Cyprus, got military pre-clearance into Cairo, and shuttled people out via Larnaca.</dd>
+          <dt>Result</dt><dd class="res">Everyone home.</dd></dl></article>
+        <article class="card"><h3>The night shift</h3><dl>
+          <dt>The problem</dt><dd>Eighty aircraft flying round the clock, with no night shift in the operations room.</dd>
+          <dt>What I did</dt><dd>Set up 24/7 operations rooms across the UK, Malta, Nigeria, Delhi and Singapore, and got the team on board.</dd>
+          <dt>Result</dt><dd class="res">Round-the-clock cover with the staffing budget held flat.</dd></dl></article>
+        <article class="card"><h3>Your one</h3><dl>
+          <dt>The problem</dt><dd>Whatever's been on your list the longest.</dd>
+          <dt>What I'll do</dt><dd>Tell you how I'd fix it, then fix it, free, so you can see how I work.</dd>
+          <dt>Result</dt><dd class="res">One less thing on you. Text me.</dd></dl></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="build">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Something you can see</span><h2>A business that runs without me in it</h2></div>
+      <ol class="flow">
+        <li><span class="s">Step 1</span><b>Enquiry</b><span class="d">Comes in from the website, logged straight away.</span></li>
+        <li><span class="s">Step 2</span><b>Quote and booking</b><span class="d">Priced and confirmed without a phone call.</span></li>
+        <li><span class="s">Step 3</span><b>Staff booked</b><span class="d">The crew offered the shift and confirmed.</span></li>
+        <li><span class="s">Step 4</span><b>Food ordered</b><span class="d">Order sized to the booking and sent.</span></li>
+        <li><span class="s">Step 5</span><b>Deposit taken</b><span class="d">Payment link out, deposit in.</span></li>
+        <li><span class="s">Step 6</span><b>7-day reminder</b><span class="d">The client gets the details a week out.</span></li>
+        <li><span class="s">Step 7</span><b>Final payment</b><span class="d">Chased automatically, not by me.</span></li>
+        <li><span class="s">Step 8</span><b>Crew brief</b><span class="d">Everything the team needs, two days before.</span></li>
+      </ol>
+      <p class="cap">This runs my own events business, Seared Events. Every one of those steps used to be me on the phone. Now an operator runs the day and the system runs the rest. Your business will have its own version of this, and that's the kind of thing I build.</p>
+    </div>
+  </section>
+
+  <section id="onepager">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">The Friday one-pager</span><h2>Where you stand, on one page</h2></div>
+      <div class="twin">
+        <div class="pager" aria-label="Example Friday one-pager">
+          <header><b>Friday one-pager</b><span class="ex">Example figures</span></header>
+          <table>
+            <tbody>
+              <tr><td>Open enquiries</td><td class="n">7 · £18,400</td></tr>
+              <tr><td>Quoted, not yet accepted</td><td class="n">4 · £11,200</td></tr>
+              <tr class="flag"><td>Finished, not invoiced</td><td class="n">3 · £4,950</td></tr>
+              <tr class="flag"><td>Invoices overdue</td><td class="n">2 · £2,300</td></tr>
+              <tr><td>Cash in the bank, change on last week</td><td class="n">+£3,150</td></tr>
+            </tbody>
+          </table>
+          <div class="acts"><span class="label">Monday's three</span>
+            <ol><li>Invoice the three finished jobs.</li><li>Chase the two overdue.</li><li>Follow up the two oldest quotes.</li></ol>
+          </div>
+        </div>
+        <div class="prose">
+          <p>Every Friday you get one page. What's coming in, what's stuck, what's owed, and the three things to do on Monday.</p>
+          <p>A lot of owners have money sitting in finished jobs nobody has invoiced. This is how you find it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="free">
+    <div class="wrap">
+      <h2>Your first fix is free</h2>
+      <p>Text me the one job that's been on your list the longest. I'll tell you how I'd fix it, and if you want, I'll fix it, free, so you can see how I work before you spend a penny.</p>
+      <div class="rows">
+        <div class="row"><a class="v" href="tel:+447506010133">07506 010133</a><button class="copy" type="button" data-copy="07506 010133">Copy</button></div>
+        <div class="row"><a class="v" href="mailto:luke@zyncly.co.uk">luke@zyncly.co.uk</a><button class="copy" type="button" data-copy="luke@zyncly.co.uk">Copy</button></div>
+      </div>
+      <p style="margin-top:22px">And if it's not for you, no problem at all. Good luck with it.</p>
+      <a class="back" href="/">How it works and what it costs →</a>
+    </div>
+  </section>
+</main>
+<div class="foot"><div class="wrap">Zyncly Ltd · Registered in England and Wales, company number 17439851 · Registered office: Garden Cottage, Woodmancote, Cirencester GL7 7ED · luke@zyncly.co.uk</div></div>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-copy'), old=b.textContent;
+    function done(){b.textContent='Copied';setTimeout(function(){b.textContent=old},1400)}
+    function sel(){var v=b.previousElementSibling;if(!v)return;var r=document.createRange();r.selectNodeContents(v);var s=window.getSelection();s.removeAllRanges();s.addRange(r)}
+    try{navigator.clipboard.writeText(t).then(done,sel)}catch(e){sel()}
+  });
+});
+(function(){
+  var boxes=[].slice.call(document.querySelectorAll('.check input'));
+  var v=document.getElementById('verdict'),c=document.getElementById('count'),t=document.getElementById('vtext');
+  function upd(){
+    var n=boxes.filter(function(b){return b.checked}).length;
+    c.textContent=n+' of 6';
+    if(n>=3){v.classList.add('hot');t.textContent="Right, we should talk. Text me:";}
+    else{v.classList.remove('hot');t.textContent=n?('Tick '+(3-n)+' more and we should talk.'):'Tick three and we should talk.';}
+  }
+  boxes.forEach(function(b){b.addEventListener('change',upd)});upd();
+})();
+</script>
+
+</body>
+</html>
